@@ -10,7 +10,7 @@ timestamp="$(date +%s)000"
 timepre=$(date +%s%N)
 
 # download 1092 Byte file
-curl -o /dev/null http://mirror.nforce.com/pub/speedtests/mini/speedtest/random750x750.jpg 2>&1 1>/dev/null
+curl -o /dev/null http://mirror.nforce.com/pub/speedtests/mini/speedtest/random750x750.jpg 1>/dev/null 2>&1
 stat=$?
 
 # time after download in nanosec

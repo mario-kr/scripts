@@ -1,4 +1,4 @@
-#! /usr/bin/env sh
+#!/usr/bin/env bash
 
 length=${1-3}
 delay=${2-0}
@@ -9,7 +9,7 @@ output_dir="/home/mario/Videos/captures"
 
 mkdir -p "$output_dir"
 
-sleep $delay
+sleep "$delay"
 
 ffmpeg -t "$length" -video_size "${geometry[0]}" \
     -f x11grab -i ":0.0+${geometry[1]}" \

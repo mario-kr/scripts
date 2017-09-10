@@ -4,7 +4,7 @@ echo
 
 i=0
 while [ $i -lt 256 ]; do
-    ~/bin/check_ping.sh $1.$i &
+    ~/bin/check_ping.sh "$1.$i" &
     let i=$i+1
 done
 
