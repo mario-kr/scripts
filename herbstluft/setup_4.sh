@@ -7,8 +7,8 @@ fi
 screen=$1
 scrn=$((screen +1))
 
-fsplitv "${screen}:$screen" 4:1
-fsplith "${scrn}:$scrn" 3:1
-fsplith "${scrn}:$scrn" 2:1
-fsplith "${scrn}:$scrn" 1:1
+fsplitv.sh "${screen}:$screen" 4:1
+fsplith.sh "${scrn}:$scrn" 3:1
+fsplith.sh "${scrn}:$scrn" 2:1
+fsplith.sh "${scrn}:$scrn" 1:1
 
