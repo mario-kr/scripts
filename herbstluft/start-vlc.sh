@@ -5,7 +5,7 @@ pgrep vlc && exit 1
 herbstclient add vlc
 herbstclient add_monitor 400x300+1520+780 vlc vlc
 
-vlc "$1" 2>/dev/null &
+vlc "$@" 2>/dev/null &
 sleep 1
 
 herbstclient move vlc
