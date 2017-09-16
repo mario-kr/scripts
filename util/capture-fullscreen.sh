@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# This script is an altered version of this one here:
+# https://gist.github.com/TheNeikos/7ee89bff513c1a4931b8178b47503e4c
+
 length=${1-3}
 delay=${2-0}
 
